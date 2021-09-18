@@ -1,0 +1,29 @@
+
+
+
+
+.nav-bar-body {
+    background-color: $main-light-blue;
+    display: flex;
+}
+
+
+
+// width property needs to be at 20 for bigger screen fix with media query??
+.nav-bar-body__container {
+    padding-top: 1vh;
+    width: 35vw;
+    justify-content: flex-start;
+    margin-left: 1vw;
+    display: flex;
+}
+
+
+
+.nav-bar-body__main-images {
+    height: 2.3rem;
+    width: 2.3rem;
+    display: flex;
+    margin-right: 1vw;
+
+}

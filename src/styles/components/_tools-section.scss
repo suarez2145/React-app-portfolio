@@ -1,0 +1,121 @@
+
+
+.tools-grid-container {
+
+    .tools-body-container {
+        margin-top: .5vh;
+        background-color: $main-blue;
+        display: flex;
+        padding-bottom: 4vh;
+
+
+
+        .tools-title {
+            text-align: left;
+            margin-top: initial;
+            margin-right: auto;
+            margin-left: 4vw;
+            font-family: $main-text-bold ;
+            color: white;
+            font-size: 39px;
+            position: absolute;
+            text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+
+        }
+    }
+
+
+    .tools-list-container {
+        width: min-content;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        margin-left: auto;
+        margin-right: 4vw;
+        height: min-content;
+        align-self: flex-end;
+        margin-top: 15vh;
+
+        
+
+        .list_container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            list-style-type: none;
+            padding-left: 1vw;
+            margin-top: initial;
+            padding-right: 1vw;
+            padding-top: 1vw;
+            background-color: #7ab0c4;
+            margin-bottom: initial;
+
+
+
+            .list_container__txt {
+                font-family: $main-text-bold ;
+                color: white;
+                display: flex;
+                width: 45vw;
+                line-height: 2;
+                justify-content: space-between;
+                align-items: center;
+                text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+
+            }
+
+            .list_container__img {
+                width: 2.2rem;
+                height: 2.2rem;
+
+            }
+        }
+    }
+}
+
+
+
+// **** MEDIA QUERIES ****
+
+
+@media(min-width: $tablet-breakpoint) {
+
+
+    .tools-grid-container .tools-list-container .list_container .list_container__txt {
+        font-size: 20px;
+        width: 33vw;
+    }
+
+    .tools-grid-container .tools-body-container .tools-title {
+        font-size: 60px;
+    }
+
+
+}
+
+
+@media(min-width: $desktop-breakpoint) {
+
+
+    .tools-grid-container .tools-list-container {
+        margin-right: 1vw;
+    }
+
+
+    .tools-grid-container .tools-list-container .list_container .list_container__txt {
+        font-size: 25px;
+        width: 35vw;
+    }
+
+
+    .tools-grid-container .tools-list-container .list_container .list_container__img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .tools-grid-container .tools-body-container .tools-title {
+    font-size: 70px;
+}
+
+
+}

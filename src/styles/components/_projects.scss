@@ -1,0 +1,413 @@
+
+.projects-grid-container {
+
+    height: min-content;
+
+
+    .left-blue-container {
+
+
+        .projects-main-container {
+            display: flex;
+            height: min-content;
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            column-gap: 2vw;
+            row-gap: 2vh;
+            justify-content: center;
+
+        }
+
+        background-color: $main-blue;
+        margin-top: .5vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding-bottom: 4vh;
+
+
+
+        .projects-title {
+            margin-top: initial;
+            font-size: 39px;
+            font-family: $main-text-bold;
+            color: white;
+            margin-right: auto;
+            padding-left: 4vw;
+            text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .steady-building-block-container {
+            border-width: 2px;
+            border-color: white;
+            border-style: solid;
+            width: 80vw;
+            background-color: #7ab0c4;
+
+
+
+            .steady-txt-container {
+                display: flex;
+                margin-left: 2vw;
+                flex-direction: column;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+
+
+                .steady-title {
+                    margin-right: auto;
+                    margin-top: initial;
+                    color: white;
+                    font-family: $main-text-bold;
+                    font-size: 20px;
+                }
+
+                .steady-tech-txt {
+                    color: white;
+                    margin-right: auto;
+                    margin-top: initial;
+                    font-size: 12px;
+                    text-align: left;
+                    font-weight: 900;
+                    font-size: 16px;
+
+                }
+
+
+                .steady-desc-txt {
+                    color: white;
+                    margin-right: auto;
+                    margin-top: initial;
+                    font-size: 12px;
+                    text-align: left;
+
+                }
+            }
+
+            .steady-img {
+                object-fit: contain;
+                width: 100%;
+                object-position: top;
+            }
+        }
+
+        .taskv-block-container {
+            border-width: 2px;
+            border-color: white;
+            border-style: solid;
+            width: 80vw;
+            background-color: #7ab0c4;
+
+
+
+            .taskv-img {
+                object-fit: contain;
+                width: 100%;
+                object-position: top;
+            }
+
+
+            .taskv-txt-container {
+                display: flex;
+                margin-left: 2vw;
+                flex-direction: column;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            
+
+                .taskv-title {
+                    margin-right: auto;
+                    margin-top: initial;
+                    color: white;
+                    font-family: $main-text-bold;
+                    font-size: 20px;
+
+                }
+
+
+                .taskv-tech-txt {
+                    color: white;
+                    margin-right: auto;
+                    margin-top: initial;
+                    text-align: left;
+                    font-weight: 900;
+                    font-size: 16px;
+                }
+
+                .taskv-desc-txt {
+                    color: white;
+                    margin-right: auto;
+                    margin-top: initial;
+                    font-size: 12px;
+                    text-align: left;
+                }
+            }
+
+
+        }
+
+        .expensify-block-container {
+
+            border-width: 2px;
+            border-color: white;
+            border-style: solid;
+            width: 80vw;
+            background-color: #7ab0c4;
+
+
+            .expensify-txt-container {
+                display: flex;
+                margin-left: 2vw;
+                flex-direction: column;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+
+
+                .expensify-title {
+                    margin-right: auto;
+                    margin-top: initial;
+                    color: white;
+                    font-family: $main-text-bold;
+                    font-size: 20px;
+                }
+
+                .expensify-tech-txt {
+                    color: white;
+                    margin-right: auto;
+                    margin-top: initial;
+                    font-size: 16px;
+                    text-align: left;
+                    font-weight: 900;
+
+                }
+
+
+                .expensify-desc-txt {
+                    color: white;
+                    margin-right: auto;
+                    margin-top: initial;
+                    font-size: 12px;
+                    text-align: left;
+
+
+                }
+            }
+
+            .expensify-img {
+                object-fit: contain;
+                width: 100%;
+                object-position: top;
+            }
+        }
+
+        .sokly-block-container {
+            border-width: 2px;
+            border-color: white;
+            border-style: solid;
+            width: 80vw;
+            background-color: #7ab0c4;
+
+
+
+            .sokly-txt-container {
+
+                display: flex;
+                margin-left: 2vw;
+                flex-direction: column;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+
+                .sokly-title {
+                    margin-right: auto;
+                    margin-top: initial;
+                    color: white;
+                    font-family: $main-text-bold;
+                    font-size: 20px;
+                }
+
+                .sokly-tech-txt {
+                    color: white;
+                    margin-right: auto;
+                    margin-top: initial;
+                    font-size: 16px;
+                    text-align: left;
+                    font-weight: 900;
+
+                }
+
+
+                .sokly-desc-txt {
+                    color: white;
+                    margin-right: auto;
+                    margin-top: initial;
+                    font-size: 12px;
+                    text-align: left;
+                }
+            }
+
+
+            .sokly-img {
+                object-fit: contain;
+                width: 100%;
+                object-position: top;
+            }
+        }
+
+    }
+
+    
+
+
+}
+
+
+// **** MEDIA QUERIES ****
+
+@media(min-width: $tablet-breakpoint) {
+
+    .projects-grid-container .left-blue-container .projects-title {
+        font-size: 60px;
+    }
+
+    .projects-grid-container .left-blue-container .steady-building-block-container {
+        width: 33vw;
+        padding-right: 1vw;
+    }
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container {
+        width: 33vw;
+        padding-right: 1vw;
+    }
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container {
+        width: 33vw;
+        padding-right: 1vw;
+    }
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container {
+        width: 33vw;
+        padding-right: 1vw;
+    }
+
+}
+
+
+@media(min-width: $desktop-breakpoint) {
+
+
+    .projects-grid-container .left-blue-container .projects-title {
+        font-size: 70px;
+    }
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .steady-txt-container .steady-title {
+        font-size: 25px;
+    }
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .steady-txt-container .steady-tech-txt {
+        font-size: 20px;
+    }
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .steady-txt-container .steady-desc-txt {
+        font-size: 16px;
+    }
+
+    .projects-grid-container .left-blue-container .steady-building-block-container {
+        width: 27vw;
+    }
+
+
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .sokly-txt-container .sokly-desc-txt {
+        font-size: 16px;
+    }
+
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .sokly-txt-container .sokly-tech-txt {
+        font-size: 20px;
+    }
+
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .sokly-txt-container .sokly-title {
+        font-size: 25px;
+    }
+
+    .projects-grid-container .left-blue-container .sokly-block-container .sokly-txt-container {
+        margin-left: 1vw;
+    }
+
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .taskv-txt-container .taskv-title {
+        font-size: 25px;
+    }
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .taskv-txt-container .taskv-tech-txt {
+        font-size: 20px;
+    }
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .taskv-txt-container .taskv-desc-txt {
+        font-size: 16px;
+    }
+
+    .projects-grid-container .left-blue-container .taskv-block-container {
+        width: 27vw;
+    }
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container .expensify-txt-container .expensify-title {
+        font-size: 25px;
+    }
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container .expensify-txt-container .expensify-tech-txt {
+        font-size: 20px;
+    }
+
+    .projects-grid-container .left-blue-container .expensify-block-container .expensify-txt-container .expensify-desc-txt {
+        font-size: 16px;
+    }
+
+    .projects-grid-container .left-blue-container .expensify-block-container {
+        width: 27vw;
+    }
+
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container {
+        width: 27vw;
+    }
+
+
+}
+
+@media(min-width: $xl-desktop-breakpoint) {
+
+    .projects-grid-container .left-blue-container .steady-building-block-container {
+        width: 23vw;
+    }
+
+    .projects-grid-container .left-blue-container .taskv-block-container {
+        width: 23vw;
+    }
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container {
+        width: 23vw;
+    }
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container {
+        width: 23vw;
+    }
+}
