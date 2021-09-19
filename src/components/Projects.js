@@ -11,7 +11,7 @@ const Projects = () => {
                 <p className='projects-title'>Projects</p>
                 <div className='projects-main-container'>
                     <div className='steady-building-block-container'>
-                        <img className='steady-img' src='/images/steadybuilding-laptop.png' alt="steadybuilding"></img>
+                        <a href='http://steadybuildingservices.com/'><img className='steady-img' src='/images/steadybuilding-laptop.png' alt="steadybuilding"></img></a>
                         <div className='steady-txt-container'>
                             <h3 className='steady-title'>Steady Building Service</h3>
                             <h4 className='steady-tech-txt'> Html | Css | Javascript | Bulma</h4>
@@ -19,7 +19,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='sokly-block-container'>
-                        <img className='sokly-img' src='/images/sokly-laptop.png' alt="Sokly"></img>
+                    <a href='https://www.sokly.xyz'><img className='sokly-img' src='/images/sokly-laptop.png' alt="Sokly"></img></a>
                         <div className='sokly-txt-container'>
                             <h3 className='sokly-title'>Sokly App</h3>
                             <h3 className='sokly-tech-txt'>Html | Css | Python | Javascript | Django | Django Restframework | Vue | Cloudinary</h3>
@@ -27,7 +27,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className='taskv-block-container'>
-                        <img className='taskv-img' src='/images/task-v-laptop.png' alt="TaskV"></img>
+                    <a href='https://suarez21.pythonanywhere.com/'><img className='taskv-img' src='/images/task-v-laptop.png' alt="TaskV"></img></a>
                         <div className='taskv-txt-container'>
                             <h3 className='taskv-title'>TaskV App</h3>
                             <h4 className='taskv-tech-txt'>Html | Css | Python | Javascript | Django | Django Restframework</h4>
@@ -35,7 +35,7 @@ const Projects = () => {
                         </div>    
                     </div>
                     <div className='expensify-block-container'>
-                        <img className='expensify-img' src='/images/expensify-laptop.png' alt="expensify"></img>
+                    <a href='https://react-expens-21.herokuapp.com'><img className='expensify-img' src='/images/expensify-laptop.png' alt="expensify"></img></a>
                         <div className='expensify-txt-container'>
                             <h3 className='expensify-title'>Expensify App</h3>
                             <h3 className='expensify-tech-txt'>Html | Scss | Javascript | React | Redux | Firebase </h3>
