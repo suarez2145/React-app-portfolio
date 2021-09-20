@@ -10,6 +10,14 @@ const Projects = () => {
             <div className='left-blue-container'>
                 <p className='projects-title'>Projects</p>
                 <div className='projects-main-container'>
+                    <div className='expensify-block-container'>
+                        <a href='https://react-expens-21.herokuapp.com'><img className='expensify-img' src='/images/expensify-laptop.png' alt="expensify"></img></a>
+                        <div className='expensify-txt-container'>
+                            <h3 className='expensify-title'>Expensify App</h3>
+                            <h3 className='expensify-tech-txt'>Html | Scss | Javascript | React | Redux | Firebase </h3>
+                            <h3 className='expensify-desc-txt'>A budget tracking application </h3>
+                        </div>
+                    </div>
                     <div className='steady-building-block-container'>
                         <a href='http://steadybuildingservices.com/'><img className='steady-img' src='/images/steadybuilding-laptop.png' alt="steadybuilding"></img></a>
                         <div className='steady-txt-container'>
@@ -34,15 +42,6 @@ const Projects = () => {
                             <h4 className='taskv-desc-txt'>An employee management web application. Designed to help managers and supervisors keep count of personel and worksite details.</h4>
                         </div>    
                     </div>
-                    <div className='expensify-block-container'>
-                    <a href='https://react-expens-21.herokuapp.com'><img className='expensify-img' src='/images/expensify-laptop.png' alt="expensify"></img></a>
-                        <div className='expensify-txt-container'>
-                            <h3 className='expensify-title'>Expensify App</h3>
-                            <h3 className='expensify-tech-txt'>Html | Scss | Javascript | React | Redux | Firebase </h3>
-                            <h3 className='expensify-desc-txt'>A budget tracking application </h3>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
