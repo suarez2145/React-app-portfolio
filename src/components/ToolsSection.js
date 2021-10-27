@@ -11,10 +11,10 @@ const ToolsSection = () => {
                 <p className='tools-title'> My Toolkit </p>
                 <div className='tools-list-container'>
                     <ul className='list_container'>
-                        <li> <img className='list_container__img' src='/images/javascript-100.png' alt="Javascript"></img> <p>Javascript</p> </li>
+                        <li> <img className='list_container__img' src='/images/javascript-60.png' alt="Javascript"></img> <p>Javascript</p> </li>
                         <li> <img className='list_container__img' src='/images/python-64.png' alt="Python"></img> <p>Python</p> </li>
-                        <li> <img className='list_container__img' src='/images/django-32.png' alt="Django"></img> <p>Django</p> </li>
-                        <li> <img className='list_container__img spin_class' src='/images/react_50.png' alt="React"></img> <p>React</p> </li>
+                        <li> <img className='list_container__img' src='/images/django-96.png' alt="Django"></img> <p>Django</p> </li>
+                        <li> <img className='list_container__img spin_class' src='/images/react-80.png' alt="React"></img> <p>React</p> </li>
                         <li> <img className='list_container__img' src='/images/html-5-48.png' alt="HTML"></img> <p>Html</p> </li>
 
                     </ul>
