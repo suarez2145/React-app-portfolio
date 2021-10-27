@@ -13,14 +13,13 @@
             width: 100%;
             flex-wrap: wrap;
             flex-direction: row;
-            column-gap: 2vw;
-            row-gap: 2vh;
             justify-content: center;
+            row-gap: 4vh;
 
         }
 
         background-color: $main-blue;
-        margin-top: .5vh;
+
         display: flex;
         flex-direction: column;
         row-gap: 3vh;
@@ -30,26 +29,199 @@
 
         .projects-title {
             margin-top: initial;
-            font-size: 39px;
+            font-size: 25px;
             font-family: $main-text-bold;
             color: white;
             margin-right: auto;
-            padding-left: 4vw;
-            text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+            margin-left: auto;
+            
 
         }
 
         .steady-building-block-container {
             width: 80vw;
+            position: relative;
             background-color: #7ab0c4;
+
+
+            .hamburger {
+                margin-left: auto;
+                margin-right: 3vw;
+                display: none;
+                cursor: pointer;
+                position: absolute;
+                z-index: 7;
+                right: 1vw;
+        
+                .bar {
+                    display: block;
+                    width: 20px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    background-color: white
+                }
+
+                .bar:nth-child(2) {
+                    opacity: 0;
+                }
+            
+                .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+            
+                .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+
+
+            .open-cover-burger {
+
+                display: block;
+                cursor: pointer;
+
+            }
+
+
+            .card-cover {
+                display: flex;
+                flex-direction: column-reverse;
+                cursor: pointer;
+            }
+
+            .cover-filter {
+                z-index: 2;
+                background-color: black;
+                position: absolute;
+                opacity: .3;
+                height: 100%;
+                width: 100%;
+            }
+
+            .card-cover-text {
+                position: absolute;
+                z-index: 4;
+                opacity: 0;
+            }
+
+
+            .cover-filter-img {
+                position: absolute;
+                z-index: 5;
+                width: 100%;
+                height: 100%;
+            }
+
+
+
+            .steady-filter-title {
+                color: white;
+                font-family: $main-text-bold;
+                font-size: 55px;
+                width: 100%;
+            }
+
+
+            // .card-cover-small-port {
+            //     position: absolute;
+            //     background-color: black;
+            //     height: 100%;
+            //     width: 100%;
+            //     opacity: 0.2;
+            // }
+
+
+// **** this card-content and img height needs to be set to 100% for the image to cover the whole card
+            .card-content{
+                opacity: 6;
+                transition: all 2s;
+                height: 100%;
+                position: relative;
+            }
+
+            pointer-events: all;
+
+
+
+            .open-project-cover {
+
+                .card-cover {
+                    transition: all 2s;
+                    opacity: 6;
+                    background-color: $main-light-blue;
+                }
+
+                pointer-events: none;
+
+                .card-cover-text {
+                    transition: all 2s;
+                    position: absolute;
+                    display: flex;
+                    z-index: 4;
+                    opacity: 6;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    justify-content: center;
+                    align-items: center;
+
+
+
+                    .live-btn {
+                        pointer-events: all;
+                        cursor: pointer;
+                    
+                    }
+                } 
+
+                .card-content {
+                transition: all 1s;
+                opacity: 1;
+                
+                }
+
+
+                .steady-filter-title {
+                    transition: all 1s;
+                    opacity: 0;
+                }
+
+
+                .cover-filter {
+                    transition: all 1s;
+                    background: black;
+                    opacity: 0.8;
+                    z-index: 3;
+                    
+                }
+
+
+
+
+
+            }
+
+
 
 
 
             .steady-txt-container {
                 display: flex;
-                margin-left: 2vw;
+                position: relative;
+                
                 flex-direction: column;
-                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+                font-family: $main-sub-txt;
+
+
+                .icon-typewriter-cont {
+                    
+                    img {
+                        width: 2.2rem;
+                    }
+                }
 
 
 
@@ -57,100 +229,458 @@
                     margin-right: auto;
                     margin-top: initial;
                     color: white;
-                    font-family: $main-text-bold;
                     font-size: 20px;
+                    margin-bottom: 1vh;
                 }
 
                 .steady-tech-txt {
                     color: white;
-                    margin-right: auto;
-                    margin-top: initial;
-                    font-size: 12px;
-                    text-align: left;
-                    font-weight: 900;
-                    font-size: 16px;
+                    font-size: 13px;
 
                 }
 
 
                 .steady-desc-txt {
-                    color: white;
-                    margin-right: auto;
+                    color: white; 
                     margin-top: initial;
-                    font-size: 12px;
-                    text-align: left;
+                    font-size: 15px;
+                    
 
                 }
             }
 
             .steady-img {
-                object-fit: contain;
+                object-fit: cover;
                 width: 100%;
-                object-position: top;
+                height: 100%;
             }
         }
 
+
+
+
+
         .taskv-block-container {
             width: 80vw;
+            position: relative;
             background-color: #7ab0c4;
+
+
+            .hamburger {
+                margin-left: auto;
+                margin-right: 3vw;
+                display: none;
+                cursor: pointer;
+                position: absolute;
+                z-index: 7;
+                right: 1vw;
+        
+                .bar {
+                    display: block;
+                    width: 20px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    background-color: white
+                }
+
+                .bar:nth-child(2) {
+                    opacity: 0;
+                }
+            
+                .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+            
+                .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+
+
+            .open-cover-burger {
+
+                display: block;
+                cursor: pointer;
+
+            }
+
+
+            .card-cover {
+                display: flex;
+                flex-direction: column-reverse;
+                cursor: pointer;
+            }
+
+            .cover-filter {
+                z-index: 2;
+                background-color: black;
+                position: absolute;
+                opacity: .3;
+                height: 100%;
+                width: 100%;
+            }
+
+            .card-cover-text {
+                position: absolute;
+                z-index: 4;
+                opacity: 0;
+            }
+
+
+            .cover-filter-img {
+                position: absolute;
+                z-index: 5;
+                width: 100%;
+                height: 100%;
+
+            }
+
+
+
+            .taskv-filter-title {
+                color: white;
+                font-family: $main-text-bold;
+                font-size: 55px;
+                width: 100%;
+            }
+
+
+
+// **** this card-content and img height needs to be set to 100% for the image to cover the whole card
+            .card-content{
+                opacity: 6;
+                transition: all 2s;
+                height: 100%;
+            }
+
+
+            pointer-events: all;
+
+
+
+            .open-project-cover {
+
+                .card-cover {
+                    transition: all 2s;
+                    opacity: 6;
+                    background-color: $main-light-blue;
+                }
+
+                pointer-events: none;
+
+                .card-cover-text {
+                    transition: all 2s;
+                    position: absolute;
+                    display: flex;
+                    z-index: 4;
+                    opacity: 6;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    justify-content: center;
+                    align-items: center;
+
+                    
+
+
+                    .live-btn {
+                        pointer-events: all;
+                        cursor: pointer;
+                    
+                    }
+                } 
+
+                .card-content {
+                transition: all 1s;
+                opacity: 1;
+                
+                }
+
+
+                .taskv-filter-title {
+                    transition: all 1s;
+                    opacity: 0;
+                }
+
+
+                .cover-filter {
+                    transition: all 1s;
+                    background: black;
+                    opacity: 0.8;
+                    z-index: 3;
+                    
+                }
+
+            }
 
 
 
             .taskv-img {
-                object-fit: contain;
+                object-fit: cover;
                 width: 100%;
-                object-position: top;
+                height: 100%;
+                object-position: right;
+                
             }
 
 
             .taskv-txt-container {
                 display: flex;
-                margin-left: 2vw;
+                position: relative; 
                 flex-direction: column;
-                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-            
+                font-family: $main-sub-txt;
+
+
+                .icon-typewriter-cont {
+                    display: flex;
+                    align-self: center;
+                    margin-bottom: 5vh;
+
+
+                    img {
+                        width: 2.2rem;
+                    }
+                }
+
+
 
                 .taskv-title {
                     margin-right: auto;
                     margin-top: initial;
                     color: white;
-                    font-family: $main-text-bold;
                     font-size: 20px;
-
+                    margin-bottom: 1vh;
                 }
-
 
                 .taskv-tech-txt {
                     color: white;
-                    margin-right: auto;
                     margin-top: initial;
-                    text-align: left;
-                    font-weight: 900;
-                    font-size: 16px;
+                    font-size: 13px;
+
                 }
+
 
                 .taskv-desc-txt {
                     color: white;
-                    margin-right: auto;
+                    
                     margin-top: initial;
-                    font-size: 12px;
-                    text-align: left;
+                    font-size: 15px;
+                    
+
                 }
             }
 
 
         }
 
+
+
+
+        // ***** to make project blocks NOT cover eachother on MOBILE columnn stack REMOVE position ABSOLUTE from .card-cover
+
         .expensify-block-container {
             width: 80vw;
             background-color: #7ab0c4;
+            position: relative;
+
+
+            .spin_class {
+                animation: rotation 7s infinite linear;
+            }
+
+            @keyframes rotation {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(359deg);
+                }
+            }
+
+
+            .hamburger {
+                margin-left: auto;
+                margin-right: 3vw;
+                display: none;
+                cursor: pointer;
+                position: absolute;
+                z-index: 7;
+                right: 1vw;
+        
+                .bar {
+                    display: block;
+                    width: 20px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    background-color: white
+                }
+
+                .bar:nth-child(2) {
+                    opacity: 0;
+                }
+            
+                .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+            
+                .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+
+            .open-cover-burger {
+
+                display: block;
+                cursor: pointer;
+
+            }
+
+
+            .card-cover {
+                display: flex;
+                flex-direction: column-reverse;
+                cursor: pointer;
+            }
+
+            .cover-filter {
+                z-index: 2;
+                background-color: black;
+                position: absolute;
+                opacity: .3;
+                height: 100%;
+                width: 100%;
+            }
+
+            .card-cover-text {
+                position: absolute;
+                z-index: 4;
+                opacity: 0;
+            }
+
+
+            .cover-filter-img {
+                position: absolute;
+                z-index: 5;
+                width: 100%;
+                height: 100%;
+
+            }
+
+
+
+            .expensify-filter-title {
+                color: white;
+                font-family: $main-text-bold;
+                font-size: 55px;
+                width: 100%;
+            }
+
+
+
+
+// **** this card-content and img height needs to be set to 100% for the image to cover the whole card
+            .card-content{
+                opacity: 6;
+                transition: all 2s;
+                height: 100%;
+            }
+
+
+            pointer-events: all;
+
+            .link-container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .open-project-cover {
+
+                .card-cover {
+                    transition: all 2s;
+                    opacity: 6;
+                    background-color: $main-light-blue;
+                }
+
+                pointer-events: none;
+
+                .card-cover-text {
+                    transition: all 2s;
+                    position: absolute;
+                    display: flex;
+                    z-index: 4;
+                    opacity: 6;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+
+                    .live-btn {
+                        pointer-events: all;
+                        cursor: pointer;
+                        position: absolute;
+                    
+                    }
+                } 
+
+                .card-content {
+                transition: all 1s;
+                opacity: 1;
+                
+                }
+
+
+                .expensify-filter-title {
+                    transition: all 1s;
+                    opacity: 0;
+                }
+
+
+                .cover-filter {
+                    transition: all 1s;
+                    background: black;
+                    opacity: 0.6;
+                    z-index: 3;
+                    
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             .expensify-txt-container {
-                display: flex;
-                margin-left: 2vw;
-                flex-direction: column;
-                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+
+                font-family: $main-sub-txt;
+
+
+                .icon-typewriter-cont {
+
+
+
+                    img {
+                        width: 2.2rem;
+                    }
+                }
 
 
 
@@ -158,17 +688,14 @@
                     margin-right: auto;
                     margin-top: initial;
                     color: white;
-                    font-family: $main-text-bold;
                     font-size: 20px;
+                    margin-bottom: 1vh;
                 }
 
                 .expensify-tech-txt {
                     color: white;
-                    margin-right: auto;
-                    margin-top: initial;
-                    font-size: 16px;
-                    text-align: left;
-                    font-weight: 900;
+                    margin-right: auto;                    
+                    font-size: 13px;
 
                 }
 
@@ -177,67 +704,230 @@
                     color: white;
                     margin-right: auto;
                     margin-top: initial;
-                    font-size: 12px;
-                    text-align: left;
-
-
+                    font-size: 15px;
                 }
             }
 
             .expensify-img {
-                object-fit: contain;
+                object-fit: cover;
                 width: 100%;
-                object-position: top;
+                height: 100%;
             }
+
+
+            
         }
+
+
+
+
 
         .sokly-block-container {
             width: 80vw;
             background-color: #7ab0c4;
+            position: relative;
+
+            .hamburger {
+                margin-left: auto;
+                margin-right: 3vw;
+                display: none;
+                cursor: pointer;
+                position: absolute;
+                z-index: 7;
+                right: 1vw;
+        
+                .bar {
+                    display: block;
+                    width: 20px;
+                    height: 3px;
+                    margin: 5px auto;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    background-color: white
+                }
+
+                .bar:nth-child(2) {
+                    opacity: 0;
+                }
+            
+                .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+            
+                .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+
+
+            .open-cover-burger {
+
+                display: block;
+                cursor: pointer;
+
+            }
+
+
+            .card-cover {
+                display: flex;
+                flex-direction: column-reverse;
+                cursor: pointer;
+            }
+
+            .cover-filter {
+                z-index: 2;
+                background-color: black;
+                position: absolute;
+                opacity: .3;
+                height: 100%;
+                width: 100%;
+            }
+
+            .card-cover-text {      
+                position: absolute;
+                z-index: 4;
+                opacity: 0;
+            }
+
+
+            .cover-filter-img {
+                position: absolute;
+                z-index: 5;
+                width: 100%;
+                height: 100%;
+
+            }
+
+
+
+            .sokly-filter-title {
+                color: white;
+                font-family: $main-text-bold;
+                font-size: 55px;
+                width: 100%;
+            }
+
+
+            .card-cover-small-port {
+                position: absolute;
+                background-color: black;
+                height: 100%;
+                width: 100%;
+                opacity: 0.2;
+            }
+
+
+// **** this card-content and img height needs to be set to 100% for the image to cover the whole card
+            .card-content{
+                opacity: 6;
+                transition: all 2s;
+                height: 100%;
+            }
+
+
+            pointer-events: all;
+
+
+            .open-project-cover {
+
+                .card-cover {
+                    transition: all 2s;
+                    opacity: 6;
+                    background-color: $main-light-blue;
+                }
+
+                pointer-events: none;
+
+
+                .card-cover-text {
+                    transition: all 2s;
+                    position: absolute;
+                    display: flex;
+                    z-index: 4;
+                    opacity: 6;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    justify-content: center;
+                    align-items: center;
+
+
+
+                    .live-btn {
+                        pointer-events: all;
+                        cursor: pointer;
+                    
+                    }
+                } 
+
+                .card-content {
+                transition: all 1s;
+                opacity: 1;
+                
+                }
+
+
+                .sokly-filter-title {
+                    transition: all 1s;
+                    opacity: 0;
+                }
+
+
+                .cover-filter {
+                    transition: all 1s;
+                    background: black;
+                    opacity: 0.8;
+                    z-index: 3;
+                    
+                }
+
+            }
 
 
 
             .sokly-txt-container {
 
-                display: flex;
-                margin-left: 2vw;
-                flex-direction: column;
-                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+                font-family: $main-sub-txt;
+
+
+                .icon-typewriter-cont {
+                    img {
+                        width: 2.2rem;
+                    }
+                }
+
 
 
                 .sokly-title {
                     margin-right: auto;
                     margin-top: initial;
                     color: white;
-                    font-family: $main-text-bold;
                     font-size: 20px;
+                    margin-bottom: 1vh;
                 }
 
                 .sokly-tech-txt {
                     color: white;
-                    margin-right: auto;
-                    margin-top: initial;
-                    font-size: 16px;
-                    text-align: left;
-                    font-weight: 900;
-
+                    font-size: 13px;
                 }
 
 
                 .sokly-desc-txt {
                     color: white;
-                    margin-right: auto;
                     margin-top: initial;
-                    font-size: 12px;
-                    text-align: left;
+                    font-size: 15px;
+                    
                 }
             }
 
 
             .sokly-img {
-                object-fit: contain;
+                object-fit: initial;
                 width: 100%;
-                object-position: top;
+                height: 100%;
+                object-position: 50% 60%;
+                
             }
         }
 
@@ -254,30 +944,108 @@
 @media(min-width: $tablet-breakpoint) {
 
     .projects-grid-container .left-blue-container .projects-title {
-        font-size: 60px;
+        font-size: 35px;
     }
 
-    .projects-grid-container .left-blue-container .steady-building-block-container {
-        width: 33vw;
-        padding-right: 1vw;
+
+    .projects-grid-container .left-blue-container .projects-main-container {
+        flex-direction: column;
+        width: initial;
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 1vh;
     }
+
+
+    // ****  STEADY BUILDING VARIABLES ****
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container {
+        width: 45vw;
+        height: initial;
+
+    }
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .hamburger {
+        margin-right: initial;
+    }
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .card-cover {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    // **** TASKV VARIABLES ****
 
 
     .projects-grid-container .left-blue-container .taskv-block-container {
-        width: 33vw;
-        padding-right: 1vw;
+        width: 45vw;
+        height: initial;
     }
+
+    .projects-grid-container .left-blue-container .taskv-block-container .card-cover {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+    // **** EXPENSIFY VARIABLES ****
 
 
     .projects-grid-container .left-blue-container .expensify-block-container {
-        width: 33vw;
-        padding-right: 1vw;
+        width: 45vw;
+        height: initial;
+        
     }
 
 
+    .projects-grid-container .left-blue-container .expensify-block-container .hamburger {
+        margin-right: initial;
+    }
+
+    .projects-grid-container .left-blue-container .expensify-block-container .card-cover {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container .expensify-txt-container .icon-typewriter-cont {
+        margin-top: 0;
+    }
+
+
+
+    // **** SOKLY VARIABLES ****
+    
+
     .projects-grid-container .left-blue-container .sokly-block-container {
-        width: 33vw;
-        padding-right: 1vw;
+        width: 45vw;
+        height: initial;
+    }
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .hamburger {
+        margin-right: initial;
+    }
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .hamburger {
+        margin-right: initial;
+    }
+
+    .projects-grid-container .left-blue-container .sokly-block-container .card-cover {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .sokly-img {
+        object-position: 50% 60%;
     }
 
 }
@@ -287,8 +1055,208 @@
 
 
     .projects-grid-container .left-blue-container .projects-title {
-        font-size: 70px;
+        font-size: 35px;
     }
+
+
+    .projects-grid-container .left-blue-container .projects-main-container {
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    // **** steady Building variables **** 
+
+
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container {
+
+
+
+        .hamburger {
+            margin-left: auto;
+            margin-right: initial;
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            z-index: 7;
+            right: 1vw;
+    
+            .bar {
+                display: block;
+                width: 20px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: white
+            }
+
+            .bar:nth-child(2) {
+                opacity: 0;
+            }
+        
+            .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+
+        .open-cover-burger {
+
+            display: block;
+            cursor: pointer;
+
+        }
+
+
+        .card-cover {
+            display: flex;
+            flex-direction: column-reverse;
+            cursor: pointer;
+        }
+
+        .cover-filter {
+            z-index: 2;
+            background-color: black;
+            position: absolute;
+            opacity: .3;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card-cover-text {
+            position: absolute;
+            z-index: 4;
+            opacity: 0;
+        }
+
+
+        .cover-filter-img {
+            position: absolute;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+
+
+
+
+
+
+
+        .open-project-cover {
+
+            .card-cover {
+                transition: all 2s;
+                opacity: 6;
+                background-color: $main-light-blue;
+            }
+
+            pointer-events: none;
+
+            .card-cover-text {
+                transition: all 2s;
+                position: absolute;
+
+                z-index: 4;
+                opacity: 6;
+
+
+                .live-btn {
+                    pointer-events: all;
+                    cursor: pointer;
+                
+                }
+            } 
+
+            .card-content {
+            transition: all 1s;
+            opacity: 1;
+            
+            }
+
+
+            .steady-filter-title {
+                transition: all 1s;
+                opacity: 0;
+            }
+
+
+            .cover-filter {
+                transition: all 1s;
+                background: black;
+                opacity: 0.8;
+                z-index: 3;
+                
+            }
+
+        }
+
+
+    }
+
+
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .card-cover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transition: all 2s;
+    }
+
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .cover-filter-img {
+        position: absolute;
+        display: flex;
+        z-index: 5;
+        object-position: right;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .cover-filter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 2;
+        opacity: .3;
+
+    }
+
+
+    .projects-grid-container .left-blue-container .steady-building-block-container .card-cover-text {
+        opacity: 0;
+        position: absolute;
+
+    }
+
+        .projects-grid-container .left-blue-container .steady-building-block-container .card-content {
+            position: relative;
+            opacity: 6;
+            transition: all 2s;
+            height: 100%;
+        }
+
+
+
+
+
+
+
 
     .projects-grid-container .left-blue-container .steady-building-block-container .steady-txt-container .steady-title {
         font-size: 25px;
@@ -296,29 +1264,235 @@
 
 
     .projects-grid-container .left-blue-container .steady-building-block-container .steady-txt-container .steady-tech-txt {
-        font-size: 20px;
+        font-size: 14px;
     }
 
 
     .projects-grid-container .left-blue-container .steady-building-block-container .steady-txt-container .steady-desc-txt {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .projects-grid-container .left-blue-container .steady-building-block-container {
         width: 27vw;
+        height: 60vh;
     }
+
+
+
+
+    // **** SOKLY variables **** 
+
+
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container {
+
+        .hamburger {
+            margin-left: auto;
+            margin-right: initial;
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            z-index: 7;
+            right: 1vw;
+    
+            .bar {
+                display: block;
+                width: 20px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: white
+            }
+
+            .bar:nth-child(2) {
+                opacity: 0;
+            }
+        
+            .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+
+        .open-cover-burger {
+
+            display: block;
+            cursor: pointer;
+
+        }
+
+
+        .card-cover {
+            display: flex;
+            flex-direction: column-reverse;
+            cursor: pointer;
+        }
+
+        .cover-filter {
+            z-index: 2;
+            background-color: black;
+            position: absolute;
+            opacity: .3;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card-cover-text {
+            position: absolute;
+            z-index: 4;
+            opacity: 0;
+        }
+
+
+        .cover-filter-img {
+            position: absolute;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+
+
+
+
+
+
+
+        .open-project-cover {
+
+            .card-cover {
+                transition: all 2s;
+                opacity: 6;
+                background-color: $main-light-blue;
+            }
+
+            pointer-events: none;
+
+            .card-cover-text {
+                transition: all 2s;
+                position: absolute;
+                z-index: 4;
+                opacity: 6;
+
+
+                .live-btn {
+                    pointer-events: all;
+                    cursor: pointer;
+                
+                }
+            } 
+
+            .card-content {
+                transition: all 1s;
+                opacity: 1;
+            
+            }
+
+
+            .sokly-filter-title {
+                transition: all 1s;
+                opacity: 0;
+            }
+
+            .sokly-txt-container {
+                margin-left: 1vw;
+                margin-right: 1vw;
+            }
+
+
+            .cover-filter {
+                transition: all 1s;
+                background: black;
+                opacity: 0.8;
+                z-index: 3;
+                
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .card-cover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transition: all 2s;
+    }
+
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .cover-filter-img {
+        position: absolute;
+        display: flex;
+        z-index: 5;
+        object-position: right;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .cover-filter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 2;
+        opacity: .3;
+
+    }
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container .card-cover-text {
+        opacity: 0;
+        position: absolute;
+
+    }
+
+        .projects-grid-container .left-blue-container .sokly-block-container .card-content {
+            position: relative;
+            opacity: 6;
+            transition: all 2s;
+            height: 100%;
+        }
+
+
+
+
+
+
 
 
 
 
     .projects-grid-container .left-blue-container .sokly-block-container .sokly-txt-container .sokly-desc-txt {
-        font-size: 16px;
+        font-size: 17px;
     }
 
 
 
     .projects-grid-container .left-blue-container .sokly-block-container .sokly-txt-container .sokly-tech-txt {
-        font-size: 20px;
+        font-size: 14px;
     }
 
 
@@ -327,9 +1501,82 @@
         font-size: 25px;
     }
 
-    .projects-grid-container .left-blue-container .sokly-block-container .sokly-txt-container {
+
+    .projects-grid-container .left-blue-container .sokly-block-container {
+        width: 27vw;
+        height: 60vh;
+    }
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .hamburger {
+        margin-right: initial;
+    }
+
+
+    .projects-grid-container .left-blue-container .sokly-block-container  .sokly-img{
+        object-fit: none;
+    }
+
+
+
+    // **** TASKV variables **** 
+
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .card-cover {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transition: all 2s;
+    }
+
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .cover-filter-img {
+        position: absolute;
+        display: flex;
+        z-index: 5;
+        object-position: right;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .cover-filter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 2;
+        opacity: .3;
+
+    }
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .card-cover-text {
+        opacity: 0;
+        position: absolute;
+
+    }
+
+        .projects-grid-container .left-blue-container .taskv-block-container .card-content {
+            position: relative;
+            opacity: 6;
+            transition: all 2s;
+            height: 100%;
+        }
+
+
+
+
+
+    .projects-grid-container .left-blue-container .taskv-block-container .taskv-txt-container {
+        margin-right: 1vw;
         margin-left: 1vw;
     }
+
+
 
 
 
@@ -339,17 +1586,85 @@
 
 
     .projects-grid-container .left-blue-container .taskv-block-container .taskv-txt-container .taskv-tech-txt {
-        font-size: 20px;
+        font-size: 14px;
     }
 
 
     .projects-grid-container .left-blue-container .taskv-block-container .taskv-txt-container .taskv-desc-txt {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .projects-grid-container .left-blue-container .taskv-block-container {
         width: 27vw;
+        height: 60vh;
     }
+
+
+
+
+
+    // **** EXPENSIFY variables **** 
+
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container .hamburger {
+        margin-right: initial;
+    }
+
+
+
+
+        .projects-grid-container .left-blue-container .expensify-block-container .card-cover {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            transition: all 2s;
+        }
+
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container .cover-filter-img {
+        position: absolute;
+        display: flex;
+        z-index: 5;
+        object-position: right;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container .cover-filter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 2;
+        opacity: .3;
+
+    }
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container .card-cover-text {
+        opacity: 0;
+        position: absolute;
+
+    }
+
+        .projects-grid-container .left-blue-container .expensify-block-container .card-content {
+            position: relative;
+            opacity: 6;
+            transition: all 2s;
+            height: 100%;
+        }
+
+
+
+    .projects-grid-container .left-blue-container .expensify-block-container .expensify-txt-container .icon-typewriter-cont {
+        margin-top: 0;
+    }
+
+
 
 
     .projects-grid-container .left-blue-container .expensify-block-container .expensify-txt-container .expensify-title {
@@ -358,21 +1673,20 @@
 
 
     .projects-grid-container .left-blue-container .expensify-block-container .expensify-txt-container .expensify-tech-txt {
-        font-size: 20px;
+        font-size: 14px;
+        margin-right: initial;
+        text-align: center;
     }
 
     .projects-grid-container .left-blue-container .expensify-block-container .expensify-txt-container .expensify-desc-txt {
-        font-size: 16px;
+        font-size: 17px;
+        margin-right: initial;
+        text-align: center;
     }
 
     .projects-grid-container .left-blue-container .expensify-block-container {
         width: 27vw;
-    }
-
-
-
-    .projects-grid-container .left-blue-container .sokly-block-container {
-        width: 27vw;
+        height: 60vh;
     }
 
 

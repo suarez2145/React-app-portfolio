@@ -5,25 +5,181 @@
 .nav-bar-body {
     background-color: $main-light-blue;
     display: flex;
+    transition: padding 500ms linear;
+
+
+    li {
+        list-style: none;
+    }
+
+    .burgerMenuNav {
+
+        margin-top: -30vh;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        transition: margin 500ms linear;
+        color: white;
+        text-align: center;
+        background-color: $main-blue;
+
+        .burgerItem {
+            padding: 5px 5px 5px 5px;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            display: flex;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    .burgerMenuNav.showMenu {
+        margin-top: 0px;
+        transition: margin 500ms linear;
+        position: absolute;
+        z-index: 1;
+        background-color: $main-blue;
+
+
+        .burgerItem {
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            display: flex;
+            
+
+        }
+
+
+    }
+
+
+
+
+    .hamburger {
+
+        margin-left: auto;
+        margin-right: 3vw;
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: white
+        }
+    }
+
+
+
+
+
+    .hamburger.openBurger  .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.openBurger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.openBurger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-bar-body__container .nav-menu {
+        display: none;
+    }
+
+
+
 }
+
+.topMarg {
+    padding-bottom: 7vh;
+    transition: padding 500ms linear;
+}
+
+
 
 
 
 // width property needs to be at 20 for bigger screen fix with media query??
 .nav-bar-body__container {
+    
+
     padding-top: 1vh;
     width: 35vw;
     justify-content: flex-start;
     margin-left: 1vw;
     display: flex;
+
+
+    .nav-menu {
+        display: flex;
+    }
+
 }
 
 
 
 .nav-bar-body__main-images {
-    height: 2.3rem;
-    width: 2.3rem;
-    display: flex;
-    margin-right: 1vw;
+    margin-right: 5vw;
 
+}
+
+
+
+
+
+
+
+
+@media(min-width: $desktop-breakpoint) {
+
+
+    .burgerMenuNav {
+        display: none;
+    }
+
+    .nav-bar-body .nav-bar-body__container .nav-menu {
+        display: flex;
+    }
+
+
+    .nav-bar-body .nav-bar-body__container.active {
+        visibility: visible;
+    }
+
+    .nav-bar-body .hamburger {
+        display: none;
+    }
+
+
+
+
+    .nav-bar-body__main-images {
+        margin-right: 5vw;
+    }
+
+
+
+
+
+}
+
+@media only screen and ( max-device-width: 667px) and (orientation:landscape) {
+    .topMarg {
+        padding-bottom: 15vh;
+        transition: padding 500ms linear;
+    }
 }

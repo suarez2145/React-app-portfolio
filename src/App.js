@@ -6,17 +6,22 @@ import ToolsSection from './components/ToolsSection';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 
+
 function App() {
+
+
   return (
 
     <div className="App">
       <NavBar />
       <Header />
-      <ToolsSection />
       <AboutMe />
+      <ToolsSection />
       <Projects />
     </div>
   );
+
+  
 }
 
 export default App;

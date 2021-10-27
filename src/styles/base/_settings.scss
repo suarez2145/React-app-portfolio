@@ -1,28 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300&display=swap');
 
 
 // colors
 
-$mainColor: red;
+$main-red: #FE6D73;
 $main-blue: #227c9d;
+$teal-blue:#17C3B2;
 $main-yellow: #ffcb77;
 $main-light-blue: rgba($main-blue, .60);
+$black-filter-fade: rgba(black, .80);
 
 
 // FONTS
 
 $main-text-bold: 'Poppins', sans-serif;
 
+$main-sub-txt: 'Nunito', sans-serif;
+
 
 
 // BREAKPOINTS
-
 
 $xl-desktop-breakpoint: 75rem;
 
 $desktop-breakpoint: 62em;
 
 $tablet-breakpoint: 43em;
+
+
+
+
+
+
+
 
 
 
