@@ -126,10 +126,10 @@ const Projects = () => {
                                                     <div className='expensify-txt-container'>
                                                         <h3 className='expensify-desc-txt'>A budget tracking app </h3>
                                                             <div className='icon-typewriter-cont'>
-                                                                <img className='list_container__img' src='/images/javascript-yellow-48.png' alt="Javascript"></img>
-                                                                <img className='list_container__img' src='/images/sass-96.png' alt="Sass"></img>
-                                                                <img className='list_container__img spin_class' src='/images/react-30.png' alt="React"></img>
-                                                                <img className='list_container__img' src='/images/firebase-96.png' alt="Firebase"></img>
+                                                                <img className='list_container__img' src='/images/javascript-blue-96.png' alt="Javascript"></img>
+                                                                <img className='list_container__img' src='/images/sass-blue-96.png' alt="Sass"></img>
+                                                                <img className='list_container__img spin_class' src='/images/react-blue-40.png' alt="React"></img>
+                                                                <img className='list_container__img' src='/images/firebase-blue-96.png' alt="Firebase"></img>
                                                             </div>
                                                         
                                                         <h3 className='expensify-tech-txt'>Scss | Javascript | React | Firebase </h3>
@@ -157,9 +157,9 @@ const Projects = () => {
                                         <div className='steady-txt-container'>
                                             <h4 className='steady-desc-txt'> A responsive website for a commercial cleaning company</h4>
                                                 <div className='icon-typewriter-cont'>
-                                                    <img className='list_container__img' src='/images/javascript-yellow-48.png' alt="Javascript"></img>
-                                                    <img className='list_container__img' src='/images/html-5-48.png' alt="Html"></img>
-                                                    <img className='list_container__img spin_class' src='/images/css3-96.png' alt="Css"></img>
+                                                    <img className='list_container__img' src='/images/javascript-blue-96.png' alt="Javascript"></img>
+                                                    <img className='list_container__img' src='/images/html-5-96.png' alt="Html"></img>
+                                                    <img className='list_container__img spin_class' src='/images/css3-48.png' alt="Css"></img>
                                                     
                                                 </div>
                                             <h4 className='steady-tech-txt'> Html | Css | Javascript </h4>
@@ -187,11 +187,11 @@ const Projects = () => {
                                         <div className='sokly-txt-container'>
                                         <h3 className='sokly-desc-txt'>A soccer player management app</h3>
                                                 <div className='icon-typewriter-cont'>
-                                                    <img className='list_container__img' src='/images/javascript-yellow-48.png' alt="Javascript"></img>
+                                                    <img className='list_container__img' src='/images/javascript-blue-96.png' alt="Javascript"></img>
                                                     <img className='list_container__img' src='/images/django-blue-50.png' alt="Django"></img>
-                                                    <img className='list_container__img spin_class' src='/images/css3-96.png' alt="Css"></img>
+                                                    <img className='list_container__img spin_class' src='/images/css3-48.png' alt="Css"></img>
                                                     <img className='list_container__img spin_class' src='/images/python-color-48.png' alt="python"></img>
-                                                    <img className='list_container__img spin_class' src='/images/vue-48.png' alt="Vue"></img>
+                                                    <img className='list_container__img spin_class' src='/images/vue-js-48.png' alt="Vue"></img>
                                                 </div>
                                             <h3 className='sokly-tech-txt'> Css | Python | Javascript | Django | Vue </h3>
                                             <a onTouchStart={linkHandler} href='https://www.sokly.xyz'><button className='live-btn'>View Live</button></a>
@@ -220,11 +220,11 @@ const Projects = () => {
                                             <div className='taskv-txt-container'>
                                                     <h4 className='taskv-desc-txt'>An employee management app</h4>
                                                 <div className='icon-typewriter-cont'>
-                                                        <img className='list_container__img' src='/images/javascript-yellow-48.png' alt="Javascript"></img>
+                                                        <img className='list_container__img' src='/images/javascript-blue-96.png' alt="Javascript"></img>
                                                         <img className='list_container__img' src='/images/django-blue-50.png' alt="Django"></img>
-                                                        <img className='list_container__img spin_class' src='/images/css3-96.png' alt="Css"></img>
+                                                        <img className='list_container__img spin_class' src='/images/css3-48.png' alt="Css"></img>
                                                         <img className='list_container__img spin_class' src='/images/python-color-48.png' alt="python"></img>
-                                                        <img className='list_container__img spin_class' src='/images/html-5-48.png' alt="Vue"></img>
+                                                        <img className='list_container__img spin_class' src='/images/html-5-96.png' alt="Vue"></img>
                                                 </div>
                                                     
                                                     <h4 className='taskv-tech-txt'>Html | Css | Python | Javascript | Django </h4>
