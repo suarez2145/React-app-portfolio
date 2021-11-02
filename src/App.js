@@ -7,10 +7,15 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 
 
+
 function App() {
 
+  
 
   return (
+
+
+    
 
     <div className="App">
       <NavBar />
@@ -18,10 +23,16 @@ function App() {
       <AboutMe />
       <ToolsSection />
       <Projects />
+
     </div>
+
+    
+
   );
 
   
 }
+
+
 
 export default App;
